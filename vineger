@@ -1,0 +1,16 @@
+    #include<iostream>
+    #include<string.h>
+    using namespace std;
+     
+    int main()
+    {   
+        string s1,key;
+        cin>>s1>>key;
+        int n=key.size();
+     
+        for(int i=0;i<s1.size();i++)
+        {
+            cout<<char((((int(s1[i])-97) + (int(key[i%n])-97))%26)+97);
+        }
+        return 0;
+    }
