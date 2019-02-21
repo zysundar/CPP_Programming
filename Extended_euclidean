@@ -1,0 +1,26 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+    typedef long long ll;
+    int main()
+    {
+    	ios_base::sync_with_stdio(false);
+    	cin.tie(NULL);
+    	int r1,r2,q=1,s1=1,s2=0,s,t1=0,t2=1,t,r=15;
+    	cin>>r1>>r2;
+    	while(r!=0)
+    	{
+    		q=r1/r2;
+    		r=r1-q*r2;
+    		s=s1-q*s2;
+    		t=t1-q*t2;
+    		cout<<q<<" "<<r1<<" "<<r2<<" "<<r<<" "<<s1<<" "<<s2<<" "<<s<<" "<<t1<<" "<<t2<<" "<<t<<endl;
+    		s1=s2;
+    		s2=s;
+    		t1=t2;
+    		t2=t;
+    		r1=r2;
+    		r2=r;
+    	}
+    	cout<<"  "<<r1<<" "<<r2<<" "<<s1<<" "<<s2<<" "<<t1<<" "<<t2;
+    }
+
