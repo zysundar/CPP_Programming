@@ -1,0 +1,41 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+    typedef long long ll;
+    int main()
+    {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        string key;
+        cin>>key;
+        int arr[2][2],k=0;
+        for(int i=0;i<2;i++)
+        {
+            for(int j=0;j<2;j++)
+            {
+                arr[i][j]=int(key[k])-65;
+                k++;
+            }
+        }
+        vector<pair<int,int>> v1;
+        vector<pair<char,char>> v2;
+        int a,b;
+        string ptext;
+        cin>>ptext;
+        int j=0;
+        if(ptext.size()%2!=0)
+        {
+            ptext = ptext+'a';
+        }
+        for(int i=0;i<ptext.size();i+=2)
+        {
+            v1.push_back(make_pair(int(ptext[i])-65,int(ptext[i+1])-65));
+        }
+        for(int i=0;i<v1.size();i++)
+        {
+            a = (v1[i].first)*arr[0][0] + (v1[i].second)*arr[0][1];
+            b = (v1[i].first)*arr[1][0] + (v1[i].second)*arr[1][1];
+            cout<<char((a%26)+65)<<char((b%26)+65);
+        }
+    }
+     
+     
