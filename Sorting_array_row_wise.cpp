@@ -15,6 +15,7 @@ for (i = 0; i < n; i++)
     }
     sort(array[i],array[i]+n);
 }
+    //Alternate method to sort
 //for (i = 0; i < n; i++)
 //{
 //    for (j = 0; j < m; j++)
@@ -35,12 +36,13 @@ for (i = 0; i < n; i++)
 
 
 
-for(i=0;i<n;i++)
-{
-   for(j=0;j<m;j++)
-    {cout<<array[i][j]<<" ";
-               }
-cout<<endl;
-}
+   for(i=0;i<n;i++)
+   {
+      for(j=0;j<m;j++)
+      {
+       cout<<array[i][j]<<" ";
+       }
+     cout<<endl;
+    }
 
 }
