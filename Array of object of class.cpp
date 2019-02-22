@@ -2,16 +2,21 @@
 #include<conio.h>
 using namespace std;
 class distance
-{int feet;
+{
+int feet;
 float inch;
 public:
 	void getdist()
-	{cout<<"enter feet";
+	{
+        cout<<"enter feet";
+	cin>>feet;
 	cout<<"enter inch";
-	cin>>inch>>feet;
-    }
+	cin>>inch;
+        }
+	
 	void showdist()
-	{cout<<feet<<inch;
+	{
+	cout<<feet<<inch;
 	}
 	
 };
@@ -22,14 +27,15 @@ int n=0;
 char ans;
 cout<<endl;
 do{
-	cout<<"enter distance number"<<n+1;
+	cout<<"Enter distance number: "<<n+1;
 	dist[++n].getdist();
-	cout<<"enter ans";
+	cout<<"Enter ans: ";
 	cin>>ans;
    }
 while(ans!='n');
 for(int j=0;j<n;j++)
-{cout<<"distance number"<<j+1<<"is";
+{
+cout<<"distance number"<<j+1<<"is";
 dist[j].showdist();
 }
 cout<<endl;
