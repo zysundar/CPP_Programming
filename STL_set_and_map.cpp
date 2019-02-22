@@ -6,6 +6,7 @@
 using namespace std;
 int main()
 {
+	//Number of Unique char in string
 	string str;
 	getline(cin,str);
 	set<char>s;
@@ -15,6 +16,7 @@ int main()
 	}
 	cout<<endl<<"number="<<s.size()<<endl;
 /*
+//Store data in map and fetch the data
 map<char,int>ma;
 pair<char,int>p;
 p.first='A';
