@@ -4,6 +4,6 @@ int main()
 {
 	int n;
 	cin>>n;
-	(n&n-1)==0 ? cout<<"hai":cout<<"nahi hai";
+	(n&n-1)==0 ? cout<<"Yes":cout<<"No";
 	return 0;
 }
