@@ -28,7 +28,7 @@ int main()
 	int i,n,m;
 	scanf("%d",&n);
 	int a[n];
-	printf("inserted number");
+	printf("Enter number of element in array");
 	scanf("%d",&m);
 	for(i=0;i<n;i++)
 	{
